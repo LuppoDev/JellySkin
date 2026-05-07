@@ -7,9 +7,9 @@
 		"version": "12.5.1",
 		"jellyfin": "10.10+",
 		"tags": ["dark", "glassmorphism", "gradient", "animated"],
-		"previewUrl": "https://cdn.jsdelivr.net/gh/prayag17/JellySkin@master/.github/preview.png",
-		"sourceUrl": "https://github.com/prayag17/JellySkin",
-		"cssUrl": "https://cdn.jsdelivr.net/npm/jellyskin@latest/dist/main.css",
+		"previewUrl": "https://cdn.jsdelivr.net/gh/luppodev/JellySkin@master/.github/preview.png",
+		"sourceUrl": "https://github.com/luppodev/JellySkin",
+		"cssUrl": "https://cdn.jsdelivr.net/npm/@luppodev/jellyskin@latest/dist/main.css",
 		"preconnect": [
 			"https://fonts.googleapis.com",
 			"https://fonts.gstatic.com",
@@ -78,28 +78,28 @@
 				"id": "remove-blur",
 				"name": "Remove Backdrop Blur",
 				"description": "Disables all backdrop-filter blur effects for improved performance.",
-				"cssUrl": "https://cdn.jsdelivr.net/npm/jellyskin@latest/dist/addons/improvePerformance/removeBackdropFilter.css",
+				"cssUrl": "https://cdn.jsdelivr.net/npm/@luppodev/jellyskin@latest/dist/addons/improvePerformance/removeBackdropFilter.css",
 				"triggerVar": "REMOVE_BLUR"
 			},
 			{
 				"id": "remove-scroll-fade",
 				"name": "Remove Scroll Fade",
 				"description": "Removes mask-image fade effects on scrollable containers.",
-				"cssUrl": "https://cdn.jsdelivr.net/npm/jellyskin@latest/dist/addons/improvePerformance/removeFadingScroll.css",
+				"cssUrl": "https://cdn.jsdelivr.net/npm/@luppodev/jellyskin@latest/dist/addons/improvePerformance/removeFadingScroll.css",
 				"triggerVar": "REMOVE_SCROLL_FADE"
 			},
 			{
 				"id": "horizontal-my-media",
 				"name": "Horizontal My Media",
 				"description": "Restores horizontal scrolling for the My Media section on the home page.",
-				"cssUrl": "https://cdn.jsdelivr.net/npm/jellyskin@latest/dist/addons/horizontalMyMedia.css",
+				"cssUrl": "https://cdn.jsdelivr.net/npm/@luppodev/jellyskin@latest/dist/addons/horizontalMyMedia.css",
 				"triggerVar": "HORIZONTAL_MY_MEDIA"
 			},
 			{
 				"id": "video-theme-blur",
 				"name": "Video Player Blur",
 				"description": "Applies backdrop blur to the video player background.",
-				"cssUrl": "https://cdn.jsdelivr.net/npm/jellyskin@latest/dist/addons/videoThemeBlur.css",
+				"cssUrl": "https://cdn.jsdelivr.net/npm/@luppodev/jellyskin@latest/dist/addons/videoThemeBlur.css",
 				"triggerVar": "VIDEO_THEME_BLUR"
 			}
 		]

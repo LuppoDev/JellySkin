@@ -31,21 +31,20 @@ jobs:
         run: npm run build
 
       - name: Publish to npm
-        run: npm publish --access public
+        run: npm publish
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
 
       - name: Generate release body
         run: |
-          VERSION="${{ github.ref_name }}"
-          echo "# JellySkin ${VERSION}" > RELEASE_BODY.md
+          echo "# JellySkin ${{ github.ref_name }}" > RELEASE_BODY.md
           echo "" >> RELEASE_BODY.md
           echo "### Quick Install" >> RELEASE_BODY.md
-          echo "\`\`\`css" >> RELEASE_BODY.md
-          echo '@import url("https://cdn.jsdelivr.net/npm/jellyskin@latest/dist/main.css");' >> RELEASE_BODY.md
-          echo "\`\`\`" >> RELEASE_BODY.md
+          echo '```css' >> RELEASE_BODY.md
+          echo '@import url("https://cdn.jsdelivr.net/npm/@luppodev/jellyskin@latest/dist/main.css");' >> RELEASE_BODY.md
+          echo '```' >> RELEASE_BODY.md
           echo "" >> RELEASE_BODY.md
-          echo "See [README](https://github.com/${{ github.repository }}/blob/${VERSION}/README.md) for full usage instructions." >> RELEASE_BODY.md
+          echo "See [README](https://github.com/${{ github.repository }}/blob/${{ github.ref_name }}/README.md) for full usage instructions." >> RELEASE_BODY.md
 
       - name: Create GitHub Release
         uses: softprops/action-gh-release@v2

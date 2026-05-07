@@ -2,8 +2,8 @@
 
 ### over engineered css theme for Jellyfin
   
-![npm (tag)](https://img.shields.io/npm/v/jellyskin/latest?style=for-the-badge) ![jsDelivr hits (npm)](https://img.shields.io/jsdelivr/npm/hm/jellyskin?label=Downloads&style=for-the-badge) ![GitHub](https://img.shields.io/github/license/prayag17/JellySkin?style=for-the-badge)\
-![GitHub Repo stars](https://img.shields.io/github/stars/prayag17/JellySkin?style=social)
+![npm (tag)](https://img.shields.io/npm/v/@luppodev/jellyskin/latest?style=for-the-badge) ![jsDelivr hits (npm)](https://img.shields.io/jsdelivr/npm/hm/@luppodev/jellyskin?label=Downloads&style=for-the-badge) ![GitHub](https://img.shields.io/github/license/luppodev/JellySkin?style=for-the-badge)\
+![GitHub Repo stars](https://img.shields.io/github/stars/luppodev/JellySkin?style=social)
 
 # ℹ️ Usage
 
@@ -16,12 +16,12 @@
 Copy the line below into **Dashboard → General → Custom CSS** and click save:
 
 ```css
-@import url("https://cdn.jsdelivr.net/npm/jellyskin@latest/dist/main.css");
+@import url("https://cdn.jsdelivr.net/npm/@luppodev/jellyskin@latest/dist/main.css");
 ```
 
 ### Logos (optional)
 ```css
-@import url("https://cdn.jsdelivr.net/npm/jellyskin@latest/dist/logo.css");
+@import url("https://cdn.jsdelivr.net/npm/@luppodev/jellyskin@latest/dist/logo.css");
 ```
 
 ---
@@ -35,7 +35,7 @@ Copy the line below into **Dashboard → General → Custom CSS** and click save
 2. Navigate to **Dashboard → JellyFrame → Themes → Marketplace**
 3. Enter this URL and click **Load Themes**:
    ```
-   https://cdn.jsdelivr.net/gh/prayag17/JellySkin@master/themes.json
+   https://cdn.jsdelivr.net/gh/luppodev/JellySkin@master/themes.json
    ```
 4. Click **Apply** on JellySkin — a configuration dialog will appear
 5. Customize accent colors, toggle addons (blur removal, horizontal My Media, etc.)
@@ -57,19 +57,19 @@ Copy the line below into **Dashboard → General → Custom CSS** and click save
 #### Remove BackdropFilter
 Removes the frosted glass effect from every element to improve performance.
 ```css
-@import url("https://cdn.jsdelivr.net/npm/jellyskin@latest/dist/addons/improvePerformance/removeBackdropFilter.css");
+@import url("https://cdn.jsdelivr.net/npm/@luppodev/jellyskin@latest/dist/addons/improvePerformance/removeBackdropFilter.css");
 ```
 
 #### Remove Scroll Fade
 Removes the gradient fade bar at the top of scrollable containers.
 ```css
-@import url("https://cdn.jsdelivr.net/npm/jellyskin@latest/dist/addons/improvePerformance/removeFadingScroll.css");
+@import url("https://cdn.jsdelivr.net/npm/@luppodev/jellyskin@latest/dist/addons/improvePerformance/removeFadingScroll.css");
 ```
 
 ### Horizontal My Media
 Restores the horizontal section for My Media.
 ```css
-@import url("https://cdn.jsdelivr.net/npm/jellyskin@latest/dist/addons/horizontalMyMedia.css");
+@import url("https://cdn.jsdelivr.net/npm/@luppodev/jellyskin@latest/dist/addons/horizontalMyMedia.css");
 ```
 
 ### Gradient Accents
@@ -77,19 +77,19 @@ Change the default gradient accent colors. Put these imports **below** the main.
 
 #### Mauve
 ```css
-@import url("https://cdn.jsdelivr.net/npm/jellyskin@latest/dist/addons/gradients/mauve.css");
+@import url("https://cdn.jsdelivr.net/npm/@luppodev/jellyskin@latest/dist/addons/gradients/mauve.css");
 ```
 ![image](https://user-images.githubusercontent.com/55829513/200132732-d188392a-5642-47f7-bb62-f204a85d992e.png)
 
 #### NightSky
 ```css
-@import url("https://cdn.jsdelivr.net/npm/jellyskin@latest/dist/addons/gradients/nightSky.css");
+@import url("https://cdn.jsdelivr.net/npm/@luppodev/jellyskin@latest/dist/addons/gradients/nightSky.css");
 ```
 ![image](https://user-images.githubusercontent.com/55829513/200132808-5b02c8e9-29c1-4a6b-ad3c-514588cf717a.png)
 
 #### Sea
 ```css
-@import url("https://cdn.jsdelivr.net/npm/jellyskin@latest/dist/addons/gradients/sea.css");
+@import url("https://cdn.jsdelivr.net/npm/@luppodev/jellyskin@latest/dist/addons/gradients/sea.css");
 ```
 ![image](https://user-images.githubusercontent.com/55829513/200132840-984deaf3-c228-4092-be8f-44c325d57782.png)
 
@@ -109,7 +109,7 @@ Override the CSS custom properties directly:
 Applies the blur effect to video player backgrounds.
 > *Caution*: Performance intensive filter.
 ```css
-@import url("https://cdn.jsdelivr.net/npm/jellyskin@latest/dist/addons/videoThemeBlur.css");
+@import url("https://cdn.jsdelivr.net/npm/@luppodev/jellyskin@latest/dist/addons/videoThemeBlur.css");
 ```
 
 ---
@@ -158,7 +158,7 @@ add_header Content-Security-Policy "default-src https: data: blob: http://image.
 
 **After (with JellySkin):**
 ```shell
-add_header Content-Security-Policy "default-src https: data: blob: http://image.tmdb.org; style-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net/npm/jellyskin@latest/dist/main.css https://cdn.jsdelivr.net/npm/jellyskin@latest/dist/logo.css; script-src 'self' 'unsafe-inline' https://www.gstatic.com/cv/js/sender/v1/cast_sender.js https://www.youtube.com blob:; worker-src 'self' blob:; connect-src 'self'; object-src 'none'; frame-ancestors 'self'";
+add_header Content-Security-Policy "default-src https: data: blob: http://image.tmdb.org; style-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net/npm/@luppodev/jellyskin@latest/dist/main.css https://cdn.jsdelivr.net/npm/@luppodev/jellyskin@latest/dist/logo.css; script-src 'self' 'unsafe-inline' https://www.gstatic.com/cv/js/sender/v1/cast_sender.js https://www.youtube.com blob:; worker-src 'self' blob:; connect-src 'self'; object-src 'none'; frame-ancestors 'self'";
 ```
 
 Also add each addon URL you use to `style-src`.
@@ -184,8 +184,8 @@ npm run lint:style
 npm run format
 
 # Publish to npm
-npm run pub:patch   # 12.5.1 → 12.5.2
-npm run pub:minor   # 12.5.2 → 12.6.0
+npm run pub:patch   # 12.5.2 → 12.5.3
+npm run pub:minor   # 12.5.3 → 12.6.0
 npm run pub:major   # 12.6.0 → 13.0.0
 ```
 
